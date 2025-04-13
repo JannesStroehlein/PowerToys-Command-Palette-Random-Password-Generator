@@ -52,3 +52,12 @@ CodeCoverage/
 *.VisualState.xml
 TestResult.xml
 nunit-*.xml
+
+# JetBrains Rider
+.idea
+
+# Visual Studio
+.vs
+
+**/Properties/launchSettings.json
+*.pubxml

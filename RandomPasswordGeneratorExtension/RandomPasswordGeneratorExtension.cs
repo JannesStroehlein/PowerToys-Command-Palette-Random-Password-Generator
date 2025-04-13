@@ -7,16 +7,16 @@ using System.Runtime.InteropServices;
 using System.Threading;
 using Microsoft.CommandPalette.Extensions;
 
-namespace RandomPasswordGenerator;
+namespace RandomPasswordGeneratorExtension;
 
 [Guid("31ef622d-1c6a-481a-b012-f94a4bfccd58")]
-public sealed partial class RandomPasswordGenerator : IExtension, IDisposable
+public sealed partial class RandomPasswordGeneratorExtension : IExtension, IDisposable
 {
     private readonly ManualResetEvent _extensionDisposedEvent;
 
-    private readonly RandomPasswordGeneratorCommandsProvider _provider = new();
+    private readonly RandomPasswordGeneratorExtensionCommandsProvider _provider = new();
 
-    public RandomPasswordGenerator(ManualResetEvent extensionDisposedEvent)
+    public RandomPasswordGeneratorExtension(ManualResetEvent extensionDisposedEvent)
     {
         this._extensionDisposedEvent = extensionDisposedEvent;
     }

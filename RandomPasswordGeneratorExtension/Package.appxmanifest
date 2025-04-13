@@ -9,7 +9,7 @@
   IgnorableNamespaces="uap uap3 rescap">
 
   <Identity
-    Name="RandomPasswordGenerator"
+    Name="RandomPasswordGeneratorExtension"
     Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
     Version="0.0.1.0" />
   <!-- When you're ready to publish your extension, you'll need to change the
@@ -46,7 +46,7 @@
       <Extensions>
         <com:Extension Category="windows.comServer">
           <com:ComServer>
-            <com:ExeServer Executable="RandomPasswordGenerator.exe" Arguments="-RegisterProcessAsComServer" DisplayName="Random Password Generator">
+            <com:ExeServer Executable="RandomPasswordGeneratorExtension.exe" Arguments="-RegisterProcessAsComServer" DisplayName="Random Password Generator">
               <com:Class Id="31ef622d-1c6a-481a-b012-f94a4bfccd58" DisplayName="Random Password Generator" />
             </com:ExeServer>
           </com:ComServer>
